@@ -1,6 +1,7 @@
 <?php
 //require_once 'func.php';
-require_once 'token.php';
+require_once 'func.php';
+require_once 'connect.php';
 /*
  * [
  *  'code',
@@ -13,11 +14,13 @@ function handleLogin2($method, $mysqli, $username, $password) {
         case MethodPost:
           $username = $_POST['username'];
           $password = $_POST['password'];
+          /*
   if($username == 0 and $password == 0) {
     $rs = basicAuth($mysqli);
     $username = $rs[0];
     $password = $rs[1];
   }
+          */
 
             return login($mysqli, $username, $password);
     }
