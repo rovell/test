@@ -1,6 +1,6 @@
 <?php
 require_once 'connect.php';
-//require 'func.php';
+require_once 'token.php';
 require_once 'func.php';
 require_once 'login.php';
 require_once 'device.php';
@@ -37,7 +37,18 @@ $response = [];
 
 switch ($type) {
   case TypeLogin:
-    $response = handleLogin2($method, $mysqli, $username, $password);
+    if(isset($id)) {
+      $res = [
+          'code' => 404,
+          'body' => 'Page is not found',
+      ];
+      http_response_code($res['code']);
+
+      $body = json_encode($res['body']);
+      echo $body;
+      return;
+    }
+        $response = handleLogin2($method, $mysqli, $username, $password);
     break;
   case TypeDevice:
     $response = handleDevice2($method, $mysqli, $id);

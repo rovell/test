@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98b82e21-1dbb-46b9-b35d-e7d6f8c9942a" name="Default Changelist" comment="v3">
+      <change afterPath="$PROJECT_DIR$/html/token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fgp4GtF5z5pE2V5iDze5dsFaSU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example.com/html/tables.php" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98b82e21-1dbb-46b9-b35d-e7d6f8c9942a" name="Default Changelist" comment="" />
+      <created>1596648301197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596648301197</updated>
+      <workItem from="1596648302625" duration="845000" />
+      <workItem from="1596649224394" duration="164000" />
+      <workItem from="1596649399351" duration="691000" />
+      <workItem from="1596651645586" duration="334000" />
+      <workItem from="1596652003879" duration="12890000" />
+      <workItem from="1596711904764" duration="24186000" />
+    </task>
+    <task id="LOCAL-00001" summary="new project">
+      <created>1596649114019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596649114019</updated>
+    </task>
+    <task id="LOCAL-00002" summary="s">
+      <created>1596649267917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596649267917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="file">
+      <created>1596700069569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596700069569</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new project" />
+    <MESSAGE value="s" />
+    <MESSAGE value="file" />
+    <MESSAGE value="v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="713" y="378" width="554" height="358" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1596700798592">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="713" y="378" width="554" height="358" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/70.27.1850.1053@70.27.1850.1053" timestamp="1596700798592" />
+    <state x="534" y="110" width="912" height="893" key="CommitChangelistDialog2" timestamp="1596809736680">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="534" y="110" width="912" height="893" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1596809736680" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1596712118966">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1596712118966" />
+    <state x="795" y="405" width="399" height="156" key="NewPhpFileDialog" timestamp="1596696816941">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="795" y="405" width="399" height="156" key="NewPhpFileDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1596696816941" />
+    <state x="659" y="252" key="run.anything.popup" timestamp="1596806495306">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="659" y="252" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1596806495306" />
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596808085978">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1596808085978" />
+  </component>
+</project>

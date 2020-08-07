@@ -1,6 +1,6 @@
 <?php
+require_once 'token.php';
 //require_once 'func.php';
-require_once 'func.php';
 require_once 'connect.php';
 /*
  * [
@@ -14,19 +14,20 @@ function handleLogin2($method, $mysqli, $username, $password) {
         case MethodPost:
           $username = $_POST['username'];
           $password = $_POST['password'];
-          /*
+
   if($username == 0 and $password == 0) {
     $rs = basicAuth($mysqli);
     $username = $rs[0];
     $password = $rs[1];
+
   }
-          */
 
             return login($mysqli, $username, $password);
     }
 }
 
 function login($mysqli, $username, $password) {
+    $password = md5($password);
     $userID = loginByUsername($mysqli, $username, $password);
     if ($userID === 0) {
         return [
@@ -63,6 +64,7 @@ function loginByUsername($mysqli, $username, $password) {
     if($obj == null) {
       return 0;
     }
+
     return $obj->id;
 }
 
