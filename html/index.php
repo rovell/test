@@ -31,6 +31,7 @@ $params = explode('/',$q);
 $type = $params[0];
 $id = $params[1];
 
+
 $method = $_SERVER['REQUEST_METHOD'];
 
 $response = [];
@@ -38,6 +39,7 @@ $response = [];
 switch ($type) {
   case TypeLogin:
     if(isset($id)) {
+
       $res = [
           'code' => 404,
           'body' => 'Page is not found',
@@ -65,4 +67,5 @@ http_response_code($response['code']);
 
 $body = json_encode($response['body']);
 echo $body;
+
 ?>
