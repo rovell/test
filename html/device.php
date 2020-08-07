@@ -4,17 +4,16 @@ require_once 'login.php';
 function handleDevice2($method, $mysqli, $id) {
     $bearer_token = checkToken($mysqli);
     $basicauth = basicAuth($mysqli);
-    $username = $basicauth[0];
-    $password = $basicauth[1];
-    $password = md5($password);
     if($basicauth != 0) {
-        $userid = loginByUsername($mysqli,$username,$password);
+        $userid = loginByUsername($mysqli,$basicauth[0],$basicauth[1]);
         if($userid === false) {
             return [
                 'code' => 401,
                 'body' => 'Auth error'
             ];
-        } else {
+        }
+        else
+            {
             $tokenget = TokenGet($mysqli,$userid);
             if($tokenget != false) {
                 $bearer_token = $tokenget;
@@ -24,7 +23,6 @@ function handleDevice2($method, $mysqli, $id) {
     }
     $userID = loginByToken($mysqli, $bearer_token);
     if ($userID === 0) {
-
         return [
             'code' => 403,
             'body' => [
@@ -43,7 +41,6 @@ function handleDevice2($method, $mysqli, $id) {
     switch ($method) {
         case MethodPost:
             $device = createDevice($mysqli, $userID,$id);
-
             if ($device === false) {
                 return [
                     'code' => 500,
@@ -52,7 +49,6 @@ function handleDevice2($method, $mysqli, $id) {
                     ]
                 ];
             }
-
             return [
                 'code' => 201,
                 'body' => $device,
@@ -60,7 +56,6 @@ function handleDevice2($method, $mysqli, $id) {
 
         case MethodGet:
             $device = getDevice($mysqli, $userID, $id);
-
             if ($device === false) {
                 return [
                     'code' => 500,
@@ -83,6 +78,7 @@ function handleDevice2($method, $mysqli, $id) {
                 'code' => 200,
                 'body' => $device,
             ];
+
         case MethodPatch:
             $device = putDevice($mysqli,$userID,$id);
             if($device === false) {
@@ -91,12 +87,12 @@ function handleDevice2($method, $mysqli, $id) {
                     'body' => 'Internal error'
                 ];
             }
-
             return [
                 'code' => 200,
                 'body' => $device
             ];
         break;
+
         case MethodDel:
             $device = delDevice($mysqli,$userID,$id);
             if($device === false) {
