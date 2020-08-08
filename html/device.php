@@ -176,3 +176,43 @@ function getDevice($mysqli, $userID, $id) {
     }
     return $array;
 }
+
+function putDevice($mysqli,$userID,$id){
+    $data = file_get_contents('php://input');
+    //die(print_r($data));
+    $data = json_decode($data, true);
+    //die(print_r($data));
+    $name = $data['name'];
+    $ip = $data['ip'];
+    $sql = "UPDATE cameras SET name = '$name' , ip = '$ip' WHERE id = '$id' and userid = '$userID'";
+    $request = $mysqli->query($sql);
+    if(mysqli_affected_rows($mysqli) === 0){
+        return [
+            'code' => 404,
+            'body' => 'Device is not found or already updated'
+        ];
+    }
+    $res = [
+        "code" => 201,
+        "body" => "Updated"
+    ];
+
+    return $res;
+
+}
+
+function delDevice($mysqli,$userID,$id) {
+    $sql = "DELETE  FROM cameras WHERE id = '$id' and userid = '$userID'";
+    $request = $mysqli->query($sql);
+    if(mysqli_affected_rows($mysqli) === 0) {
+        return [
+            'code' => 404,
+            'body' => 'Device is not found or already deleted'
+        ];
+    }
+    return [
+        'code' => 200,
+        'body' => 'Device removed'
+    ];
+}
+
